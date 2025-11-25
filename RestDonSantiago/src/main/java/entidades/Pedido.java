@@ -66,9 +66,11 @@ public class Pedido {
     // Método para calcular el total del pedido
     public double calcularTotal() {
         double total = 0;
+        //Recorre la lista de Platos
         for (Platos p : listaPlatos) {
             total += p.getCantidad() * p.getPrecio();
         }
+        //Recorre la lista de Bebidas
         for (Bebidas b : listaBebidas) {
             total += b.getCantidad() * b.getPrecio();
         }
